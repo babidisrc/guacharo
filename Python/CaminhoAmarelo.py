@@ -5,7 +5,7 @@ import os
 # ============================================================================
 # 1. CONFIGURAÇÕES
 # ============================================================================
-CAMINHO_VIDEO = r"C:\Users\Pedro\Desktop\Visão Computacional\Vídeos-2\CaminhoAmareloFalhado-2.mp4"
+CAMINHO_VIDEO = r"C:\Users\Pedro\Desktop\Visão Computacional\Vídeos-2\CaminhoAmareloFalhado-1.mp4"
 
 if not os.path.exists(CAMINHO_VIDEO):
     print("[ERRO] Vídeo não encontrado")
@@ -154,7 +154,7 @@ while True:
                             mensagem_tela = "Curva Leve Esquerda <"
                             cor_texto = (0, 255, 255)
                         else:
-                            mensagem_tela = "Siga em Frente ^"
+                            mensagem_tela = "Continue ^"
                             cor_texto = (0, 255, 0)
                     else: # Direita
                         if distancia > limite_brusco:
@@ -164,7 +164,7 @@ while True:
                             mensagem_tela = "Curva Leve Direita >"
                             cor_texto = (0, 255, 255)
                         else:
-                            mensagem_tela = "Siga em Frente ^"
+                            mensagem_tela = "Continue ^"
                             cor_texto = (0, 255, 0)
                             
                     ultima_direcao_visual = mensagem_tela
